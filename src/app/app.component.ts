@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ImagenService } from 'src/app/services/imagen.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pixabay';
+  titulo = 'Buscador de imágenes - Pixabay';
+
+  constructor(public imagenService: ImagenService) {
+    
+  }
 }
